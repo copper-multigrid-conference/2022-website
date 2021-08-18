@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Copper Mountain Conference on Iterative and Multigrid Methods">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./images/favicon.ico">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <!-- Custom CSS -->
+    <link href="css/copper.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light copper-color">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="about.html">About</a>
+            <a class="nav-item nav-link" href="lodging.html">Lodging</a>
+            <a class="nav-item nav-link" href="{{info.programlink}}">Program</a>
+            <a class="nav-item nav-link" href="registration.html">Registration</a>
+            <a class="nav-item nav-link" href="submit.html">Submit an abstract</a>
+            <a class="nav-item nav-link" href="student.html">Submit a student paper</a>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+
+  <div class="container">
+      <div class="d-block mx-auto main-block">
+      <h1 class="title">16th Copper Mountain Conference On</h1>
+      <h1 class="title">Iterative Methods</h1>
+      </div>
+  </div>
+
+    <div id="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+  <!-- Bootstrap core JavaScript ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="bootstrap/js/bootstrap.js"></script>
+
+  {% block extrajs %}{% endblock %}
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85019101-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-85019101-1');
+  </script>
+
+  </body>
+</html>

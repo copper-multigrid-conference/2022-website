@@ -1,0 +1,5 @@
+#!/bin/sh
+#rsync -ravz --delete --dry-run -e "ssh -A -t lukeo@pheasant ssh -A -t lolson@grandmaster.colorado.edu" ./live/ :~/public_html/.
+#rsync -ravz --delete           -e "ssh -A -t lukeo@pheasant ssh -A -t lolson@grandmaster.colorado.edu" ./live/ :/home/lolson/public_html/.
+#rsync -ravz --delete --dry-run -e "ssh -A -t lukeo@pheasant ssh -A -t lolson@grandmaster.colorado.edu" ./live/ :/home/copper/public_html/2017b/.
+ rsync -ravz --delete           -e ssh ./live/ copper@grandmaster.colorado.edu:/home/copper/public_html/2022/.
