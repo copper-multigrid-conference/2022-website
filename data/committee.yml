@@ -6,13 +6,13 @@
 
 - name: Michele Benzi
   affil: Scuola Normale Superiore
-  url: https://www.sns.it/it/benzi-michele
+  url: https://www.sns.it/en/persona/michele-benzi
   role: Program Committee
 
 - name: John Shadid
   email: jnshadi@sandia.gov
   affil: Sandia National Laboratories
-  url: http://www.cs.sandia.gov/ccr-jnshadi
+  url: https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/profile.cfm?jnshadi
   role: Conference Chair
 
 - name: Xiao- Chuan Cai
@@ -42,11 +42,12 @@
 
 - name: Steven Hamilton
   affil: Oak Ridge National Laboratory
+  url: https://www.ornl.gov/staff-profile/steven-p-hamilton
   role: Program Committee
 
 - name: Kirk Jordan
   affil: IBM, Watson Research Center
-  url: http://cifellows.org/match/kirk-jordan-at-ibm-tj-watson-reserach-center/
+  url: https://researcher.watson.ibm.com/researcher/view.php?person=us-kjordan
   role: Program Committee
 
 - name: Misha Kilmer
@@ -97,7 +98,7 @@
 
 - name: David Silvester
   affil: University of Manchester
-  url: http://www.ma.umist.ac.uk/djs
+  url: https://personalpages.manchester.ac.uk/staff/david.silvester/
   role: Program Committee
 
 - name: Andreas Stathopoulos
@@ -117,5 +118,5 @@
 
 - name: Irad Yavneh
   affil: Technion
-  url: http://www.cs.technion.ac.il/people/irad/
+  url: https://irad.cs.technion.ac.il/
   role: Program Committee
