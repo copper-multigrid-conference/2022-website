@@ -1,27 +1,22 @@
 abstracts:
   title: Presentation Abstracts
-  date: TBD
+  date: February 7, 2022
   url: submit.html
 
 studentpaper:
   title: Student Competition Paper
-  date:  TBD
+  date:  January 17, 2022
   url:   student.html
 
 studentabs:
   title: Student Competition Abstract
-  date:  TBD
+  date:  January 10, 2022
   url:   student.html
 
 earlyregistration:
   title: Early Registration
-  date:  TBD
+  date:  March 7, 2022
   url:   registration.html
-
-registration:
-  title: Registration
-  date: TBD
-  url: registration.html
 
 specialissue:
   title: Journal Special Issue
@@ -34,4 +29,4 @@ specialissueopen:
   url: about.html#specialissue
 
 cancellation:
-  date: TBD
+  date: March 28, 2022
