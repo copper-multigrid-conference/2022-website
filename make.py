@@ -29,7 +29,8 @@ files = [\
 '_people.html',
 '_registration.html',
 '_student.html',
-'_submit.html']
+'_submit.html',
+'_timezone.html']
 
 
 # remove blank entries from the yaml input
