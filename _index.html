@@ -1,4 +1,11 @@
 {% extends "_layout.html" %}
+{% block extrajs %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+<script>
+  {% include "_timezone.js" %}
+</script>
+{% endblock %}
 {% block title %}Index{% endblock %}
 {% block content %}
 
@@ -42,6 +49,31 @@
         </div>
       </div>
     </div>
+
+  <!--
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <h5>Schedule at a glance:</h5>
+    </div>
+    <div class="col-12">
+      {% include "_timezone_table.html" %}
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-4">
+      <table class="table table-sm" id="legend">
+        <tr><td class="table-danger">Tutorials: via Zoom</td></tr>
+        <tr><td class="table-primary">Session 1 talks: via Zoom</td></tr>
+        <tr><td class="table-success">Session 2 talks: via Zoom</td></tr>
+        <tr><td class="bg-success">Session 2 student paper talks: via Zoom</td></tr>
+        <tr><td class="table-warning">Break time: meet in gather.town</td></tr>
+        <tr><td class="bg-warning">Virtual banquet: via Zoom</td></tr>
+      </table>
+    </div>
+    <div class="col-8">
+    </div>
+  </div>
+  -->
 
     <div class="row row-top">
       <div class="col-sm-3 col-md-4">
