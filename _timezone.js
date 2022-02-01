@@ -70,9 +70,9 @@ function createtable(newtz='America/Los_Angeles') {
     '|',
     '|',
     '|',
-    '11:00',
-    '',
-    '',
+    '|',
+    '|',
+    '12:00',
   ];
   let ignoreastime = ['', '|'];
   // start over
@@ -105,10 +105,10 @@ function createtable(newtz='America/Los_Angeles') {
     let th = document.createElement("th");
     let tutname = "";
     if (d == '2022-03-31') {
-      tutname = 'Graphs';
+      tutname = 'Iterative Methods';
     }
     if (d == '2022-04-01') {
-      tutname = 'Iterative Methods';
+      tutname = 'GraphBLAS';
     }
     if (dates.includes(d)) {
       if (d == '2022-04-04') {
@@ -182,7 +182,7 @@ function createtable(newtz='America/Los_Angeles') {
         if (i>=3) {
           color = 'table-danger';
         }
-        if (i<3 || i>=9) {
+        if (i<3 || i>=11) {
           color = '';
         }
       }
