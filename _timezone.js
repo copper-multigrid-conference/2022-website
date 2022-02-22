@@ -17,36 +17,42 @@ function loadTimeZoneList(){
 }
 function createtable(newtz='America/Los_Angeles') {
   let basetz = 'America/Los_Angeles';
-  let times=['08:00',
-    '08:25',
-    '08:50',
-    '09:15',
-    '09:40',
-    '10:05',
-    '10:20',
-    '10:45',
-    '11:10',
-    '11:35',
-    '12:00',
+  let times=[
+  '08:00',
+  '08:25',
+  '08:50',
+  '09:15',
+  '09:40',
+  '10:05',
+  '10:25',
+  '10:50',
+  '11:15',
+  '11:40',
+  '12:05',
+  '12:30',
   ];
-  let label=['1',
-    '1',
-    '1',
-    '1',
+  let label=[
+    '1,3,5,7,9',
+    '1,3,5,7,9',
+    '1,3,5,7,9',
+    '1,3,5,7,9',
+    '1,3,5,7,9',
     'break',
-    'break',
-    '2',
-    '2',
-    '2',
-    '2',
+    '2,4,6,8',
+    '2,4,6,8',
+    '2,4,6,8',
+    '2,4,6,8',
+    '2,4,6,8',
     'break',
   ];
-  let labelcolors=['table-primary',
+  let labelcolors=[
+      'table-primary',
+      'table-primary',
       'table-primary',
       'table-primary',
       'table-primary',
       'table-warning',
-      'table-warning',
+      'table-success',
       'table-success',
       'table-success',
       'table-success',
@@ -73,6 +79,7 @@ function createtable(newtz='America/Los_Angeles') {
     '|',
     '|',
     '12:00',
+    '',
   ];
   let ignoreastime = ['', '|'];
   // start over
@@ -122,7 +129,7 @@ function createtable(newtz='America/Los_Angeles') {
     row.appendChild(th);
   }
   let row2 = thead.insertRow();
-  days = ["Session", "M", "Tu", "W", "Th", "F"];
+  days = ["Sessions", "M", "Tu", "W", "Th", "F"];
   if (printtutorial) {
     days = ["Th", "F"].concat(days)
   }
@@ -187,30 +194,30 @@ function createtable(newtz='America/Los_Angeles') {
         }
       }
       if (d == '2022-04-06') {
-        if (times[i] == '09:40') {
-          color = 'bg-warning';
-        }
         if (times[i] == '10:05') {
           color = 'bg-warning';
         }
-        if (times[i] == '10:20') {
+        if (times[i] == '10:25') {
+          color = 'bg-warning';
+        }
+        if (times[i] == '10:50') {
           color = 'bg-success';
         }
-        if (times[i] == '10:45') {
+        if (times[i] == '11:15') {
           color = 'bg-success';
         }
-        if (times[i] == '11:10') {
+        if (times[i] == '11:40') {
           color = 'bg-success';
         }
-        if (times[i] == '11:35') {
+        if (times[i] == '12:05') {
           color = 'table-warning';
         }
       }
-      // if (d == '2021-04-01') {
-      //   if (times[i] == '09:40') {
-      //     color = 'table-danger';
-      //   }
-      // }
+      if (d == '2022-04-08') {
+        if (['10:05', '10:25', '10:50', '11:15', '11:40', '12:05'].includes(times[i])) {
+          color = 'table-warning';
+        }
+      }
       cell.setAttribute("class", color + " py-0");
     }
   }
