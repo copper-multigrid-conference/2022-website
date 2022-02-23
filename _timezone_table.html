@@ -6,6 +6,7 @@
                  ('America/New_York', 'New York'),
                  ('America/St_Johns', 'St. John\'s'),
                  ('Europe/London',    'London'),
+                 ('UTC',              'UTC'),
                  ('Europe/Berlin',    'Berlin'),
                  ('Europe/Moscow',    'Moscow'),
                  ('Israel',           'Israel'),
@@ -13,7 +14,7 @@
                  ('Asia/Tokyo',       'Tokyo'),
                 ] %}
 {% for tz in tzlist %}
-  <button type="button" class="btn btn-outline-secondary btn-xs" onclick="createtable('{{tz[0]}}')">{{tz[1]}}</button>
+  <button type="button" class="btn btn-outline-secondary btn-sm" onclick="createtable('{{tz[0]}}')">{{tz[1]}}</button>
 {% endfor %}
 <div class="clearfix"></div>
 <span id="scheduletitle" class="font-weight-bold text-danger"></span>
