@@ -195,7 +195,7 @@ function createtable(newtz='America/Los_Angeles') {
       }
       if (d == '2022-04-06') {
         if (times[i] == '10:05') {
-          color = 'bg-warning';
+          color = 'table-warning';
         }
         if (times[i] == '10:25') {
           color = 'bg-warning';
